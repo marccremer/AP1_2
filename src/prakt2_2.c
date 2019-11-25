@@ -1,0 +1,79 @@
+//Aufgabe 2
+/* Programm das die Primzahlen von 2 bis zu maximal 1000 ausgibt.
+Da wir hier 3 Schleifen haben wobei 2 eineinander liegen gehört das Programm
+zur O(n+sqrt(n)*(n-))
+Der 2. zähler "j" ist 
+Marc Cremer 2019
+ */
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int eingaben(char* inputname);
+
+
+
+int main()
+{	
+	int start;
+	int ende;
+	int ostatus =0;
+	start = 2;
+	ende = eingaben("bis wo hin wir rechnen sollen");
+	const int arrsize = ende+1;
+	int numbers[arrsize];
+	double nsq = sqrt((double)ende);
+	for (int i = 2; i <= ende; ++i)
+	{
+		numbers[i] = 0;
+		ostatus+=1;
+	}
+	for (int i = 2; i <= nsq; ++i)
+	{
+		if (numbers[i] == 0)
+		{
+			//printf("prime? %i\n",i );
+			numbers[i] = 0;
+			for (int j = i*i; j <= ende; j=j+i)
+			{
+				numbers[j] = 1;
+				ostatus+=1;
+			}
+		}
+	}
+
+	for (int i = start; i < ende; ++i)
+	{
+		if (numbers[i] == 0)
+		{
+			printf("Die nummer %4i ist eine Primezahl\n",i );
+			ostatus+=1;
+		}
+	}
+	printf("Der ostatus ist %i\n",ostatus );
+
+	return 0;
+}
+
+
+int eingaben(char* inputname){
+	/*returns the entered integer or exits with an error*/
+	printf("Bitte %s(3-1000) :",inputname );
+	int returnvalue;
+	int nitems;
+	nitems = scanf( "%i",  &returnvalue);
+	if (nitems == EOF) {
+	    /* no input */
+	    printf("End of file was reached while nothing was read\n" );
+	} else if (nitems == 0 ) {
+	    /* no integers was given */
+	    printf("Bitte nur ganze Zahlen\n");
+	    exit(1);
+	} else if ( returnvalue < 2 | returnvalue > 1000 ) {
+	    /* to small */
+	    printf("Bitte eine Zahl zwischen 3 und 1001\n");
+	    exit(1);
+	} else {
+	    return returnvalue;  
+	}
+}
