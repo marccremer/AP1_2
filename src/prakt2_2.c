@@ -47,8 +47,6 @@ int main()
 			ostatus+=1;
 		}
 	}
-	printf("Der ostatus ist %i\n",ostatus );
-
 	return 0;
 }
 
