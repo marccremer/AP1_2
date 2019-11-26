@@ -1,12 +1,12 @@
-/* Aufgabe 1: Programmieren in C
+/* 
 Sie spielen ein Würfelspiel mit 5 Würfeln. Schreiben Sie ein C-Programm, das aus 5
 eingelesenen Augenpoker ermittelt, ob eine der folgenden Figuren gewürfelt wurde und wenn
 ja, welche.
 Grand gleiche Augenzahl auf allen 5 Würfeln
 Poker gleiche Augenzahl auf 4 Würfeln
 Full House 3 gleiche und 2 gleiche Augenzahlen
-Hinweis: Benutzen Sie für das Abspeichern der Augenzahlen ein Array. Definieren Sie die
-Größe als Konstante */
+Marc Cremer 2019
+ */
 
 #include <stdio.h>
 #include <string.h>

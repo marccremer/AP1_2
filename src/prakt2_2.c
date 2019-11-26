@@ -1,8 +1,6 @@
-//Aufgabe 2
 /* Programm das die Primzahlen von 2 bis zu maximal 1000 ausgibt.
-Da wir hier 3 Schleifen haben wobei 2 eineinander liegen gehört das Programm
-zur O(n+sqrt(n)*(n-))
-Der 2. zähler "j" ist 
+Da wir hier 3 Schleifen haben wobei 2 eineinander liegen  die schlechter zahlen finden
+je mehr zahlen sie gefunden haben gehört das Programmzur O(N log (log N))
 Marc Cremer 2019
  */
 #include <stdio.h>
@@ -32,7 +30,6 @@ int main()
 	{
 		if (numbers[i] == 0)
 		{
-			//printf("prime? %i\n",i );
 			numbers[i] = 0;
 			for (int j = i*i; j <= ende; j=j+i)
 			{
