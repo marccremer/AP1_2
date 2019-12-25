@@ -22,12 +22,12 @@ int main()
 	int arr[arrgroese];
 	int current_bubble;
 	int sortedarr[arrgroese];
-	
+
 	/*initialize array with random numbers */
 	for (int i = 0; i < arrgroese; ++i)
 	{
 		arr[i] = rand() % 100;
-		
+
 	}
 	printf("here is the array unsorted:");
 	printarray(arr,arrgroese);
@@ -78,7 +78,7 @@ void bubbleanimation(int arr[],int arrgroese,int bubble,int sorted){
 			}
 			else{
 				printf("%*s|%*i|%*s\n",3,filler,4,arr[i-1],3,filler);
-			}	
+			}
 		}
 	}
 	printf("\n");
@@ -86,13 +86,13 @@ void bubbleanimation(int arr[],int arrgroese,int bubble,int sorted){
 	{
 		printf(" \n");
 	}
-		usleep(70000);
+		usleep(700000);
 }
 
 void printarray(int array[],int arrgroese){
 	for (int i = 0; i < arrgroese; ++i)
 	{
-		
+
 		printf("%i,",array[i] );
 	}
 }

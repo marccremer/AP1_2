@@ -1,0 +1,359 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"new",
+				"newid"
+			],
+			[
+				"se",
+				"searchresult"
+			],
+			[
+				"std",
+				"stdio.h\tstandard header"
+			],
+			[
+				"ret",
+				"returnvalue"
+			],
+			[
+				"an",
+				"anhand"
+			],
+			[
+				"retu",
+				"return"
+			],
+			[
+				"cle",
+				"clearscreen"
+			],
+			[
+				"op",
+				"optionpicked"
+			],
+			[
+				"rea",
+				"readoption"
+			],
+			[
+				"art",
+				"artikelentnehmen"
+			],
+			[
+				"artik",
+				"artikelindex"
+			],
+			[
+				"lager",
+				"lager"
+			],
+			[
+				"sat",
+				"saturation"
+			],
+			[
+				"sa",
+				"saturation"
+			],
+			[
+				"sp",
+				"spalteAnzahl"
+			],
+			[
+				"spa",
+				"spalteArtikelname"
+			],
+			[
+				"la",
+				"lager"
+			],
+			[
+				"ftp",
+				"fptr"
+			],
+			[
+				"ft",
+				"fptr"
+			],
+			[
+				"load",
+				"loadsaturation"
+			],
+			[
+				"lag",
+				"lager"
+			],
+			[
+				"re",
+				"returnvalue"
+			],
+			[
+				"test",
+				"testvalue"
+			],
+			[
+				"return",
+				"returnvalue"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"st",
+				"stdio.h\tstandard header"
+			],
+			[
+				"in",
+				"inc\t#include <…>"
+			],
+			[
+				"si",
+				"size"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "AP1 C Build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"AP1 C Build",
+					""
+				],
+				[
+					"AP1 C Build",
+					"single_and_run"
+				],
+				[
+					"AP1 C Build",
+					"compile all"
+				]
+			],
+			[
+				"AP1 C Build",
+				"single_and_run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pro",
+				"Project: Close"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/marclarbs/gitrepos/aufgabe2"
+	],
+	"file_history":
+	[
+		"/home/marclarbs/gitrepos/aufgaben3/src/lagereigenschaften.txt",
+		"/home/marclarbs/gitrepos/aufgaben3/src/prak3_3.c",
+		"/home/marclarbs/gitrepos/aufgaben3/src/mymake.mak",
+		"/home/marclarbs/gitrepos/aufgaben3/src/lager.bin",
+		"/home/marclarbs/gitrepos/aufgaben3/src/asci.c",
+		"/home/marclarbs/.config/sublime-text-3/Packages/Terminal/Terminal.sublime-settings",
+		"/home/marclarbs/.config/sublime-text-3/Packages/User/Terminal.sublime-settings",
+		"/home/marclarbs/gitrepos/aufgaben3/src/compile.sh",
+		"/home/marclarbs/.config/i3blocks/config",
+		"/home/marclarbs/gitrepos/aufgaben3/ap1_3.sublime-project",
+		"/home/marclarbs/gitrepos/aufgaben3/src/test.c",
+		"/home/marclarbs/gitrepos/aufgaben3/src/prakt3_2.c",
+		"/home/marclarbs/gitrepos/aufgaben3/src/prakt3_1.c",
+		"/home/marclarbs/gitrepos/aufgaben3/src/fileparser.c",
+		"/home/marclarbs/gitrepos/aufgaben3/src/test.txt",
+		"/home/marclarbs/gitrepos/aufgaben3/.gitignore",
+		"/home/marclarbs/.config/sublime-text-3/Packages/User/untitled.sublime-build"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"lasterror",
+			"artikelindex",
+			"artikel_by_id",
+			"findeartikelid",
+			"artikelindex",
+			"readop",
+			"ent",
+			"artikelind",
+			"int anzahlartikel(int id);\t\t\t\t\t\t\t\t\t//returns the anzahl of artikel mit id \"id\"\n",
+			"anzahlar",
+			"finde",
+			"artikelh",
+			"readop",
+			"findeartikelid"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 160.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "AP1 C Build",
+	"project": "Ap1_2.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
