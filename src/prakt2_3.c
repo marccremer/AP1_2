@@ -3,8 +3,8 @@ Anschließend werde die Werte aus dem Array gelesen und formatiert in
 einer Tabelle ausgegeben werden. 
 Marc Cremer 2019*/
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>	//printf
+#include <stdlib.h>	//exit()
 
 int eingaben(char* inputname);
 int arr_summe(int arr[],int array_groese);
@@ -32,6 +32,7 @@ int main(){
 	}
 	durchschnittsnote = arr_summe(klausurergebnis,klausurenanzahl)/klausurenanzahl;
 	durchfallquote = ((double)ergebnis[4]/klausurenanzahl) * 100;
+	//der finale output. Mit %4i kann ich gleichmaessiges spacing haben
 	printf("Der Notenspiegel sieht dann so aus:\n");
 	printf("_______________________________________________\n");
 	printf("Noten  |   1   |   2   |   3   |   4   |   5   |\nAnzahl |%4i   |%4i   |%4i   |%4i   |%4i   |\n",ergebnis[0],ergebnis[1],ergebnis[2],ergebnis[3],ergebnis[4]);

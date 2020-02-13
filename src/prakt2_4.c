@@ -1,18 +1,21 @@
 /*Bubble sort
 Sortierd einen random integer array der größe arraygroese aufsteigend nach größe.
 Hierzu wird ein bubble-sort Algoritmus verwendet.
+Eine kleine Animation spielt um die Sortierung zu zeigen.
+
+Man kann 'anmiationspeed' veraendern um die Geschwindigkeit der Animation zu verändern
 Durch die 2 for schleife hat man eine O-notation for O(n^2)
 Marc Cremer */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <unistd.h>
+#include <stdio.h>		//printf,scanf
+#include <stdlib.h>		//exit()
+#include <time.h>		//time() fuer rand()
+#include <unistd.h>		//usleep
 
 
-void tausche(int array[],int element_a,int element_b);
-void bubbleanimation(int arr[],int arrgroese,int bubble,int sorted);
-void printarray(int array[],int arrgroese);
+void tausche(int array[],int element_a,int element_b);									//tausche 2 array elemente
+void bubbleanimation(int arr[],int arrgroese,int bubble,int sorted,int animationspeed);	//Animiere das sorting
+void printarray(int array[],int arrgroese);												//Ausgabe des Ergebnisses
 
 int main()
 {
@@ -22,6 +25,7 @@ int main()
 	int arr[arrgroese];
 	int current_bubble;
 	int sortedarr[arrgroese];
+	int animationspeed = 70000; //how fast in ms the animation is gonna play
 
 	/*initialize array with random numbers */
 	for (int i = 0; i < arrgroese; ++i)
@@ -42,7 +46,7 @@ int main()
 				tausche(arr,current_bubble,j);
 			}
 			current_bubble+=1;
-			bubbleanimation(arr,arrgroese,current_bubble,sorted);
+			bubbleanimation(arr,arrgroese,current_bubble,sorted,animationspeed);//print next frame of the animation
 
 		}
 		sorted+=1;
@@ -62,7 +66,8 @@ void tausche(int array[],int element_a,int element_b){
 	array[element_b] = temp;
 }
 
-void bubbleanimation(int arr[],int arrgroese,int bubble,int sorted){
+void bubbleanimation(int arr[],int arrgroese,int bubble,int sorted,int speedms){
+	//prints 3 columns with the numbers in the middle and filler to the sides
 	char filler[]  = " ";
 	char filler2[] = "{(";
 	char filler3[] = ")}";
@@ -82,11 +87,12 @@ void bubbleanimation(int arr[],int arrgroese,int bubble,int sorted){
 		}
 	}
 	printf("\n");
-	for (int i = 0; i < 10; ++i) /*clear console */
+
+	for (int i = 0; i < 10; ++i) /*clear screen */
 	{
 		printf(" \n");
 	}
-		usleep(700000);
+		usleep(speedms);
 }
 
 void printarray(int array[],int arrgroese){
