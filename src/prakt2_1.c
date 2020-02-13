@@ -1,27 +1,24 @@
 /* 
-Sie spielen ein Würfelspiel mit 5 Würfeln. Schreiben Sie ein C-Programm, das aus 5
-eingelesenen Augenpoker ermittelt, ob eine der folgenden Figuren gewürfelt wurde und wenn
-ja, welche.
-Grand gleiche Augenzahl auf allen 5 Würfeln
-Poker gleiche Augenzahl auf 4 Würfeln
-Full House 3 gleiche und 2 gleiche Augenzahlen
-Marc Cremer 2019
- */
+Nimmt 5 Integer und gibt aus ob man 1 von 3 Figuren gewuerfelt hat.
 
-#include <stdio.h>
-#include <string.h>
+Marc Cremer 2019 */
 
-int has_value(int val,int arr[],int size);
+#include <stdio.h>//printf,scanf
+#include <string.h>//memset
+
+int has_value(int val,int arr[],int size);//return 1 ,wenn val im array ist sonst 0
 
 int main()
 {
 	const int wuerfel = 5;
 	const int zahlen = 6;
-	int ergebnis[wuerfel],poker[zahlen];
+	int ergebnis[wuerfel],poker[zahlen];//poker ist was gewuerfelt wurde
 
-	memset(poker, 0, zahlen*sizeof(poker[0]));
+	memset(poker, 0, zahlen*sizeof(poker[0])); //fuellt den array mit lauter Nullen
 	printf("Poker Night !!\n");
+
 	for (int i = 0; i < wuerfel; ++i)
+		//nimmt din Input und schreibt ihn(wenn valide) in poker[]
 		{
 			printf("Würfel %i: ", i+1);
 			scanf("%i",&ergebnis[i]);
@@ -34,7 +31,9 @@ int main()
 			}
 			poker[ergebnis[i]]+=1;
 		}
+
 		if (has_value(5,poker,zahlen))
+			//checkt die verschiedenen figuren
 		{
 			printf("you won: Grand\n");
 		}

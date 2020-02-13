@@ -3,24 +3,25 @@ Da wir hier 3 Schleifen haben wobei 2 eineinander liegen  die schlechter zahlen 
 je mehr zahlen sie gefunden haben gehört das Programmzur O(N log (log N))
 Marc Cremer 2019
  */
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
+#include <stdio.h> 	//printf
+#include <math.h>	//sqrt
+#include <stdlib.h>	//exit()
 
-int eingaben(char* inputname);
+int eingaben(char* inputname); //handelt korrekt inputs
 
 
 
 int main()
 {	
-	int start;
-	int ende;
-	int ostatus =0;
-	start = 2;
+	int start = 2;	//wir starten bei 2
+	int ende;		//bis wohin	
+	int ostatus =0;	//kann man nutzen fuer die Wachstumsermittlung
+
 	ende = eingaben("bis wo hin wir rechnen sollen");
 	const int arrsize = ende+1;
-	int numbers[arrsize];
+	int numbers[arrsize];	
 	double nsq = sqrt((double)ende);
+
 	for (int i = 2; i <= ende; ++i)
 	{
 		numbers[i] = 0;
@@ -65,7 +66,7 @@ int eingaben(char* inputname){
 	    printf("Bitte nur ganze Zahlen\n");
 	    exit(1);
 	} else if ( returnvalue < 2 | returnvalue > 1000 ) {
-	    /* to small */
+	    /* to small or to big*/
 	    printf("Bitte eine Zahl zwischen 3 und 1001\n");
 	    exit(1);
 	} else {
